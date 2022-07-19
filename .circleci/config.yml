@@ -33,7 +33,7 @@ jobs:
 # Sequential workflow
 workflows:
   # Name the workflow
-  myWorkflow:
+  myRollback:
     jobs:
       - create_infrastructure
 
