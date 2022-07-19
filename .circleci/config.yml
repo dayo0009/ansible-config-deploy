@@ -36,14 +36,7 @@ jobs:
        - run:
            name: Test job
            # Fail the job intentionally to simulate an error.
-           command:  |
-            # Test if stack is created
-            if create_infrastructure
-            then
-               return 0
-            else
-               return 1
-            fi
+           command: return 0
        - destroy_environment
 
 # Sequential workflow
