@@ -15,6 +15,7 @@ jobs:
                 --template-file cloudfront.yml \
                 --stack-name production-distro \
                 --parameter-overrides PipelineID="production-bucket198287506099" \ # Name of the S3 bucket you created manually.
+                
    
 # Sequential workflow
 workflows:
