@@ -40,7 +40,7 @@ workflows:
   getLastdeployID:
     jobs:
       - promote_to_production
-      - clean_up_old_front_end
+      - clean_up_old_front_end:
           requires:
             - promote_to_production
          
